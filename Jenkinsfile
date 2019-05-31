@@ -1,11 +1,5 @@
 node {
-    environment {
-     registry = "isospin4357/mydockerhub"
-     registryCredential = 'temphub'
-    dockerImage = ''
-    }
-    
-    
+  
     def app
 
     stage('Clone repository') {
@@ -35,7 +29,7 @@ node {
          * First, the incremental build number from Jenkins
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. */
-        docker.withRegistry('https://registry.hub.docker.com', registryCredential) {
+        docker.withRegistry('https://registry.hub.docker.com', 'isospin4357/mydockerhub') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         }
