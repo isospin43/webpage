@@ -1,4 +1,9 @@
 node {
+  environment {
+   registry = "isospin4357/mydockerhub"
+   registryCredential = 'temphub'
+  dockerImage = ''
+  }
   
     def app
 
