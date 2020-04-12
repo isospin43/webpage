@@ -17,10 +17,10 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-      sh "sudo docker build -t isospin43/webpage ."
-      /*
+      //sh "sudo docker build -t isospin43/webpage ."
+      
         app = docker.build("isospin43/webpage")
-        */
+        
     }
 
     stage('Test image') {
