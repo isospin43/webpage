@@ -15,9 +15,9 @@ node {
 
     stage('Build image') {
       
-      agent {
-                 label 'APP'
-             }
+     // agent {
+     //            label 'APP'
+     //        }
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
