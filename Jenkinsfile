@@ -1,4 +1,4 @@
-node {
+node('SSH-test') {
   environment {
    registry = "isospin4357/mydockerhub"
    registryCredential = 'temphub'
