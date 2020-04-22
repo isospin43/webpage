@@ -21,9 +21,9 @@ node(label: 'SSH-test') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-      sh "docker build -t isospin43/webpage ."
+     // sh "docker build -t isospin43/webpage ."
       
-      //  app = docker.build("isospin43/webpage")
+        app = docker.build("isospin43/webpage")
         
     }
 
