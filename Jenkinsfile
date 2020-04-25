@@ -42,7 +42,7 @@ node(label: 'SSH-test') {
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. */
          // docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-        docker.withRegistry('https://index.docker.io/v2', 'dockerhub') {
+        docker.withRegistry('https://index.docker.io/v2', 'temphub') {
         //index.docker.io
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
