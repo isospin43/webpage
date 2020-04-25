@@ -1,9 +1,9 @@
 node(label: 'SSH-test') {
-  environment {
-   registry = "isospin43/mydockerhub"
-   registryCredential = 'temphub'
-  dockerImage = ''
-  }
+ // environment {
+ //  registry = "isospin43/mydockerhub"
+ //  registryCredential = 'temphub'
+ // dockerImage = ''
+ // }
   
     def app
 
