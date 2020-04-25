@@ -41,7 +41,7 @@ node(label: 'SSH-test') {
          * First, the incremental build number from Jenkins
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. */
-         docker.withRegistry('https://registry.hub.docker.com', 'temphub') {
+         docker.withRegistry('https://cloud.docker.com/u/isospin43/repository/docker/isospin43/webpage', 'temphub') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         }
