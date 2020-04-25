@@ -3,7 +3,7 @@ node(label: 'SSH-test') {
  //  registry = "isospin43/webpage"
  //  registryCredential = 'temphub'
  // dockerImage = ''
-  }
+ // }
   
     def app
 
